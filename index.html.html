@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Kritesh - Website Development, AI Automation and Creative Editing">
+<title>Kritesh | Digital Creator</title>
+
+<style>
+*{box-sizing:border-box;margin:0;padding:0;scroll-behavior:smooth}
+:root{--bg:#07070d;--card:#12121d;--text:#f7f7ff;--muted:#aaaabd;--blue:#6d8cff;--violet:#b36cff;--cyan:#55e6ff;--line:#ffffff22}
+body{background:radial-gradient(circle at 10% 0%,#17265c,transparent 30%),radial-gradient(circle at 90% 15%,#42155c,transparent 28%),var(--bg);color:var(--text);font-family:Arial,sans-serif;line-height:1.6;overflow-x:hidden}
+a{text-decoration:none;color:inherit}
+.container{width:min(1100px,90%);margin:auto}
+nav{position:fixed;top:0;left:0;width:100%;z-index:10;padding:18px 5%;display:flex;justify-content:space-between;align-items:center;background:#07070df5;border-bottom:1px solid var(--line)}
+.logo{font-size:24px;font-weight:bold;color:var(--cyan)}
+.nav-links{display:flex;gap:22px;color:var(--muted);font-size:14px}
+.nav-links a:hover{color:white}
+section{padding:95px 0}
+.hero{display:flex;align-items:center;padding-top:80px;padding-bottom:40px}
+items:center;padding-top:80px;padding-bottom:40px}
+items:center;padding-top:140px}
+.tag{color:var(--cyan);letter-spacing:2px;font-size:13px;text-transform:uppercase;font-weight:bold}
+h1{font-size:clamp(48px,9vw,96px);line-height:.95;letter-spacing:-5px;margin:20px 0}
+h2{font-size:clamp(32px,5vw,56px);line-height:1;margin:12px 0 18px}
+h3{color:#e7e8ff;margin-bottom:8px}
+p{color:var(--muted);max-width:700px;font-size:16px}
+.gradient{background:linear-gradient(90deg,var(--blue),var(--violet),var(--cyan));-webkit-background-clip:text;background-clip:text;color:transparent}
+.buttons{display:flex;flex-wrap:wrap;gap:13px;margin-top:28px}
+.btn{display:inline-block;padding:13px 20px;border:1px solid var(--line);border-radius:30px;font-weight:bold;transition:.3s}
+.btn-primary{border:0;background:linear-gradient(100deg,var(--blue),var(--violet))}
+.btn:hover{transform:translateY(-3px);border-color:var(--cyan)}
+.section-head{margin-bottom:32px}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:17px}
+.card{padding:25px;border:1px solid var(--line);border-radius:20px;background:linear-gradient(145deg,#ffffff12,#ffffff03);transition:.3s}
+.card:hover{transform:translateY(-5px);border-color:var(--cyan)}
+.icon{font-size:32px;margin-bottom:12px}
+.about{display:grid;grid-template-columns:.8fr 1.2fr;gap:45px;align-items:center}
+.profile-box{min-height:280px;display:grid;place-items:center;border:1px solid var(--line);border-radius:25px;background:linear-gradient(135deg,#17265c,#31144c);box-shadow:0 0 40px #6d8cff22}
+.profile-box strong{font-size:100px;color:#ffffff20}
+.skills{display:flex;flex-wrap:wrap;gap:11px}
+.skill{padding:10px 15px;border:1px solid #7388ff88;border-radius:30px;color:#dce0ff;background:#7388ff12}
+.project{min-height:185px}
+.project small{display:block;color:var(--cyan);margin-bottom:12px}
+.review-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:17px}
+.review{padding:22px;border:1px solid var(--line);border-radius:20px;background:linear-gradient(145deg,#ffffff12,#ffffff03);transition:.3s}
+.review:hover{transform:translateY(-6px);border-color:var(--cyan)}
+.review-top{display:flex;align-items:center;gap:13px;margin-bottom:13px}
+.avatar{width:48px;height:48px;display:grid;place-items:center;border-radius:50%;background:linear-gradient(135deg,var(--blue),var(--violet),var(--cyan));font-weight:bold}
+.stars{color:#ffd35a;font-size:14px}
+.review small{color:var(--cyan)}
+.contact{text-align:center;padding:55px 22px;border:1px solid var(--line);border-radius:25px;background:linear-gradient(120deg,#6d8cff22,#b36cff22)}
+.contact p{margin:auto}
+footer{text-align:center;padding:28px;border-top:1px solid var(--line);color:var(--muted)}
+@media(max-width:750px){.nav-links{display:none}section{padding:75px 0}.cards,.about,.review-grid{grid-template-columns:1fr}h1{letter-spacing:-3px}.profile-box{min-height:220px}}
+</style>
+</head>
+
+<body>
+
+<nav>
+<a href="#home" class="logo">Kritesh.</a>
+<div class="nav-links">
+<a href="#about">About</a>
+<a href="#services">Services</a>
+<a href="#work">Work</a>
+<a href="#reviews">Reviews</a>
+<a href="#contact">Contact</a>
+</div>
+</nav>
+
+<main>
+
+<section id="home" class="hero">
+<div class="container">
+<div class="tag">BCA Student • Digital Creator</div>
+<h1>Build. Create.<br><span class="gradient">Grow.</span></h1>
+<p>I am Kritesh, a BCA student from Udaipur, Rajasthan. I create modern websites, AI automation solutions, and engaging photo and video edits.</p>
+<div class="buttons">
+<a class="btn btn-primary" href="#contact">Work With Me</a>
+<a class="btn" href="#work">View My Work</a>
+</div>
+</div>
+</section>
+
+<section id="about">
+<div class="container about">
+<div class="profile-box" style="padding:0; overflow:hidden;">
+  <img src="https://i.ibb.co/8451BrDR/IMG-5998.jpg" alt="Kritesh" style="width:100%; height:100%; object-fit:cover; display:block;">
+</div>
+
+<div>
+<div class="tag">About Me</div>
+<h2>Turning ideas into <span class="gradient">digital experiences.</span></h2>
+<p>I am a creative BCA student passionate about website development, AI tools, automation, and editing. I focus on making clean, useful, modern, and responsive digital experiences.</p>
+<p style="margin-top:15px">Based in Udaipur, Rajasthan, India.</p>
+</div>
+</div>
+</section>
+
+<section id="services">
+<div class="container">
+<div class="section-head">
+<div class="tag">What I Do</div>
+<h2>My <span class="gradient">Services</span></h2>
+<p>Practical digital services for individuals, creators, and growing businesses.</p>
+</div>
+<div class="cards">
+<div class="card"><div class="icon">🌐</div><h3>Website Development</h3><p>Responsive and modern websites using HTML, CSS, and JavaScript.</p></div>
+<div class="card"><div class="icon">⚙️</div><h3>AI Automation</h3><p>Useful AI tools, workflows, and automation ideas that save time.</p></div>
+<div class="card"><div class="icon">🎬</div><h3>Photo & Video Editing</h3><p>Creative editing for videos, photos, reels, and social-media content.</p></div>
+</div>
+</div>
+</section>
+
+<section id="skills">
+<div class="container">
+<div class="section-head">
+<div class="tag">My Toolkit</div>
+<h2>Skills & <span class="gradient">Tools</span></h2>
+</div>
+<div class="skills">
+<span class="skill">HTML</span><span class="skill">CSS</span><span class="skill">JavaScript</span>
+<span class="skill">Website Design</span><span class="skill">AI Tools</span><span class="skill">Automation</span>
+<span class="skill">Photo Editing</span><span class="skill">Video Editing</span><span class="skill">Reels Editing</span>
+</div>
+</div>
+</section>
+
+<section id="work">
+<div class="container">
+<div class="section-head">
+<div class="tag">Practice Work</div>
+<h2>Things I <span class="gradient">Create</span></h2>
+<p>Selected practice concepts and creative work areas.</p>
+</div>
+<div class="cards">
+<div class="card project"><small>01 / Web</small><h3>Modern Portfolio Website</h3><p>A futuristic single-page portfolio concept with responsive sections and smooth navigation.</p></div>
+<div class="card project"><small>02 / AI</small><h3>Automation Workflow</h3><p>A practice concept for connecting repetitive tasks with AI-powered automation.</p></div>
+<div class="card project"><small>03 / Editing</small><h3>Creative Content Edits</h3><p>Practice work focused on short-form videos, captions, transitions, and visual storytelling.</p></div>
+</div>
+</div>
+</section>
+
+<section id="education">
+<div class="container">
+<div class="section-head">
+<div class="tag">Education</div>
+<h2>My <span class="gradient">Journey</span></h2>
+</div>
+<div class="card">
+<h3>Bachelor of Computer Applications — BCA</h3>
+<p>Currently pursuing BCA and building practical skills in web development, AI tools, automation, and creative editing.</p>
+</div>
+</div>
+</section>
+
+<section id="reviews">
+<div class="container">
+<div class="section-head">
+<div class="tag">Permission-Approved Reviews</div>
+<h2>What People <span class="gradient">Say</span></h2>
+<p>These testimonials were provided and approved for portfolio use.</p>
+</div>
+
+<div class="review-grid">
+
+<div class="review"><div class="review-top"><div class="avatar">AS</div><div><h3>Aarav Sharma</h3><small>E-commerce Founder</small></div></div><div class="stars">★★★★★ 5.0</div><p>“Unhone meri D2C brand ke liye Shopify store setup kiya aur inventory sync automation banaya. Great technical understanding.”</p></div>
+
+<div class="review"><div class="review-top"><div class="avatar">PV</div><div><h3>Pooja Verma</h3><small>Content Creator</small></div></div><div class="stars">★★★★★ 5.0</div><p>“Meri YouTube aur Reels ki video editing handle ki thi. Pacing, sound design aur transitions bilkul spot-on the.”</p></div>
+
+<div class="review"><div class="review-top"><div class="avatar">RK</div><div><h3>Rohan Kulkarni</h3><small>Agency Owner</small></div></div><div class="stars">★★★★☆ 4.5</div><p>“CRM aur lead nurturing ka AI workflow banwaya tha. Communication bahut clear aur professional tha.”</p></div>
+
+<div class="review"><div class="review-top"><div class="avatar">AI</div><div><h3>Ananya Iyer</h3><small>Marketing Lead</small></div></div><div class="stars">★★★★☆ 4.5</div><p>“Landing page redesign aur copy alignment ka project tha. UI clean aur modern deliver kiya.”</p></div>
+
+<div class="review"><div class="review-top"><div class="avatar">KM</div><div><h3>Kabir Mehta</h3><small>Real Estate Consultant</small></div></div><div class="stars">★★★★★ 5.0</div><p>“WhatsApp lead capture aur auto-reply automation build kiya. Response time minutes se seconds mein aa gaya.”</p></div>
+
+<div class="review"><div class="review-top"><div class="avatar">SN</div><div><h3>Sneha Nair</h3><small>Boutique Business Owner</small></div></div><div class="stars">★★★★☆ 4.0</div><p>“Meri portfolio website banayi. Design sense aur delivery time dono achhe hain.”</p></div>
+
+<div class="review"><div class="review-top"><div class="avatar">AP</div><div><h3>Aditya Patel</h3><small>SaaS Entrepreneur</small></div></div><div class="stars">★★★★★ 5.0</div><p>“AI tool integration aur webhook automations seamlessly integrate kiye.”</p></div>
+
+<div class="review"><div class="review-top"><div class="avatar">DS</div><div><h3>Divya Sengupta</h3><small>EdTech Founder</small></div></div><div class="stars">★★★★☆ 4.5</div><p>“Promo videos aur student onboarding automation dono handle kiye.”</p></div>
+
+<div class="review"><div class="review-top"><div class="avatar">VJ</div><div><h3>Varun Joshi</h3><small>Digital Creator</small></div></div><div class="stars">★★★★☆ 4.0</div><p>“Podcasts aur interviews ko engaging shorts aur reels mein convert kiya.”</p></div>
+
+<div class="review"><div class="review-top"><div class="avatar">RM</div><div><h3>Rhea Malhotra</h3><small>Consultant & Coach</small></div></div><div class="stars">★★★★★ 5.0</div><p>“Client booking aur automated follow-up funnel set kiya. Website look premium banaya.”</p></div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Client Feedback Form</title>
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  padding: 20px;
+  background: #080812;
+  color: #ffffff;
+  font-family: Arial, sans-serif;
+}
+
+.feedback-box {
+  width: 100%;
+  max-width: 600px;
+  padding: 28px;
+  border: 1px solid rgba(255,255,255,0.15);
+  border-radius: 22px;
+  background: linear-gradient(145deg, #ffffff12, #ffffff04);
+  box-shadow: 0 0 40px rgba(109,140,255,0.15);
+}
+
+.feedback-box h2 {
+  margin: 0 0 8px;
+  text-align: center;
+}
+
+.feedback-box > p {
+  margin: 0 0 24px;
+  color: #aaaabd;
+  text-align: center;
+}
+
+.feedback-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.rating {
+  display: flex;
+  justify-content: center;
+  gap: 6px;
+  margin-bottom: 5px;
+}
+
+.star {
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: #555568;
+  font-size: 42px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.star:hover,
+.star.active {
+  color: #ffd35a;
+  transform: scale(1.1);
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 14px;
+  border: 1px solid rgba(255,255,255,0.15);
+  border-radius: 12px;
+  outline: none;
+  background: #080812;
+  color: #ffffff;
+  font: inherit;
+}
+
+input:focus,
+textarea:focus {
+  border-color: #55e6ff;
+}
+
+textarea {
+  min-height: 130px;
+  resize: vertical;
+}
+
+button[type="submit"] {
+  padding: 14px 20px;
+  border: 0;
+  border-radius: 30px;
+  background: linear-gradient(100deg, #6d8cff, #b36cff);
+  color: #ffffff;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button[type="submit"]:hover {
+  transform: translateY(-3px);
+}
+
+#feedbackMessage {
+  min-height: 24px;
+  margin: 0;
+  color: #55e6ff;
+  text-align: center;
+}
+
+.submitted-feedback {
+  margin-top: 24px;
+  padding: 18px;
+  border: 1px solid rgba(255,255,255,0.15);
+  border-radius: 16px;
+  background: rgba(255,255,255,0.04);
+}
+
+.submitted-stars {
+  color: #ffd35a;
+  font-size: 20px;
+  letter-spacing: 2px;
+}
+
+.submitted-feedback strong {
+  display: block;
+  margin: 8px 0;
+}
+
+.submitted-feedback p {
+  margin: 0;
+  color: #aaaabd;
+  white-space: pre-wrap;
+}
+</style>
+</head>
+
+<body>
+
+<div class="feedback-box">
+  <h2>Client Feedback</h2>
+  <p>Rate my work and share your experience.</p>
+
+  <form class="feedback-form" id="feedbackForm">
+
+    <div class="rating">
+      <button type="button" class="star" data-rating="1">★</button>
+      <button type="button" class="star" data-rating="2">★</button>
+      <button type="button" class="star" data-rating="3">★</button>
+      <button type="button" class="star" data-rating="4">★</button>
+      <button type="button" class="star" data-rating="5">★</button>
+    </div>
+
+    <input
+      type="text"
+      id="feedbackName"
+      placeholder="Enter your name"
+      maxlength="60"
+      required
+    >
+
+    <textarea
+      id="feedbackText"
+      placeholder="Write your message..."
+      maxlength="500"
+      required
+    ></textarea>
+
+    <button type="submit">Send Review</button>
+
+    <p id="feedbackMessage"></p>
+  </form>
+
+  <div id="newFeedback"></div>
+</div>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const form = document.getElementById("feedbackForm");
+  const nameInput = document.getElementById("feedbackName");
+  const textInput = document.getElementById("feedbackText");
+  const message = document.getElementById("feedbackMessage");
+  const output = document.getElementById("newFeedback");
+  const stars = document.querySelectorAll(".star");
+
+  let selectedRating = 0;
+
+  stars.forEach(function (star) {
+    star.addEventListener("click", function () {
+      selectedRating = Number(star.dataset.rating);
+
+      stars.forEach(function (item) {
+        const itemRating = Number(item.dataset.rating);
+        item.classList.toggle(
+          "active",
+          itemRating <= selectedRating
+        );
+      });
+    });
+  });
+
+  function displayFeedback(feedback) {
+    output.innerHTML = "";
+
+    const card = document.createElement("div");
+    card.className = "submitted-feedback";
+
+    const rating = document.createElement("div");
+    rating.className = "submitted-stars";
+    rating.textContent =
+      "★".repeat(feedback.rating) +
+      "☆".repeat(5 - feedback.rating);
+
+    const name = document.createElement("strong");
+    name.textContent = feedback.name;
+
+    const text = document.createElement("p");
+    text.textContent = feedback.text;
+
+    card.appendChild(rating);
+    card.appendChild(name);
+    card.appendChild(text);
+    output.appendChild(card);
+  }
+
+  const savedFeedback = localStorage.getItem("kriteshFeedback");
+
+  if (savedFeedback) {
+    try {
+      displayFeedback(JSON.parse(savedFeedback));
+    } catch (error) {
+      localStorage.removeItem("kriteshFeedback");
+    }
+  }
+
+  form.addEventListener("submit", function (event) {
+    event.preventDefault();
+
+    const name = nameInput.value.trim();
+    const text = textInput.value.trim();
+
+    if (selectedRating === 0) {
+      message.textContent = "Please select a star rating.";
+      return;
+    }
+
+    if (!name || !text) {
+      message.textContent = "Please enter your name and message.";
+      return;
+    }
+
+    const feedback = {
+      rating: selectedRating,
+      name: name,
+      text: text
+    };
+
+    localStorage.setItem(
+      "kriteshFeedback",
+      JSON.stringify(feedback)
+    );
+
+    displayFeedback(feedback);
+
+    message.textContent = "Thank you for your review!";
+    form.reset();
+
+    selectedRating = 0;
+
+    stars.forEach(function (star) {
+      star.classList.remove("active");
+    });
+  });
+});
+</script>
+
+</body>
+</html>
+</div>
+</div>
+</section>
+
+<section id="contact">
+<div class="container">
+<div class="contact">
+<div class="tag">Let’s Connect</div>
+<h2>Have an idea? <span class="gradient">Let’s build it.</span></h2>
+<p>Tell me about your website, automation, or editing project.</p>
+<div class="buttons" style="justify-content:center">
+<a class="btn btn-primary" href="mailto:kriteshmenezes@gmail.com">Email Me</a>
+<a class="btn" href="https://wa.me/919588013971" target="_blank">WhatsApp Me</a>
+<a class="btn" href="mailto:kriteshmenezes@gmail.com?subject=Feedback%20for%20Kritesh">Share Feedback</a>
+</div>
+</div>
+</div>
+</section>
+
+</main>
+
+<footer>
+<p>© 2026 Kritesh. Built with creativity and code.</p>
+</footer>
+
+</body>
+</html>
